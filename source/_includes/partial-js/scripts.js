@@ -2,6 +2,12 @@ let weekdays = [
 	"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
 ]
 
+let month= ["January","February","March","April","May","June","July",
+	"August","September","October","November","December"];
+
+let monthIndex = ["", "January","February","March","April","May","June","July",
+	"August","September","October","November","December"];
+
 let dayEndings = [
 	"th", // 10th
 	"st", // 1st
@@ -106,18 +112,21 @@ if(document.getElementById("this-week-list") !== null) {
 	let dinnerModal = document.getElementById('add-meal-item')
 	dinnerModal.addEventListener('show.bs.modal', function (event) {
 		let dayOfTheWeek = parseInt(event.relatedTarget.closest(".day-box").getAttribute("data-day"));
-		let dateNumber = parseInt(event.relatedTarget.closest(".day-box").querySelector(".day-number").innerText);
+		let dateNumber = event.relatedTarget.closest(".day-box").querySelector(".day-number").innerText;
 
 		// This is the name of the local storage variable
 		let saveID = event.relatedTarget.closest(".day-box").id;
 		document.getElementById("chosen-date").value = saveID;
 
 		// Build the st, nd, rd, and th endings.
-		let lastDigit = String(dateNumber);
-		lastDigit = parseInt(lastDigit[lastDigit.length - 1]);
+		let lastDigit = parseInt(dateNumber[dateNumber.length - 1]);
+
+		let buildDate = dateNumber.split("/");
+		let monthName = monthIndex[buildDate[0]]
+		let dayName = buildDate[1]
 
 		// Set the modal title
-		let modalTitle = weekdays[dayOfTheWeek] + ", the " + dateNumber + dayEndings[lastDigit];
+		let modalTitle = weekdays[dayOfTheWeek] + ", " + monthName + " " + dayName + dayEndings[lastDigit];
 		document.getElementById("add-meal-item-title").querySelector("span").innerText = modalTitle;
 	})
 
