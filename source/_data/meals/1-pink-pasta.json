@@ -1,0 +1,24 @@
+{
+	"id": "1",
+	"name": "Pink Pasta",
+	"url": "pink-pasta",
+	"description": "Delicious pasta that makes 6 individual meals",
+	"cookTime": "20 to 30 minutes",
+	"category": [
+		"pasta", "italian"
+	],
+	"ingredients": [
+		{"name": "pasta", "amount": 2, "measurement": "box"},
+		{"name": "alfredo", "amount": 12, "measurement": "oz"},
+		{"name": "marinara", "amount": 12, "measurement": "oz"},
+		{"name": "meatballs", "amount": 1, "measurement": "lb"}
+	],
+	"instructions": [
+		"Start the frozen meatballs on a skillet with a tiny bit of avocado oil on low heat.",
+		"Start cooking both boxes of pasta according to the instructions.",
+		"Once pasta is done, drain, add a whole jar of alfredo, and a whole jar of marinara.",
+		"Add in extra seasonings like garlic powder and onion powder if you want. Probably some black pepper too.",
+		"Add in the meatballs once they are cooked.",
+		"Cover the pan and let it get hot all the way through. The heat and pressure will activate the delicious flavors."
+	]
+}

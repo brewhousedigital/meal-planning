@@ -4,20 +4,77 @@ title: "Home"
 permalink: /
 ---
 
+<style>
+	@media screen and (min-width: 1200px){
+		.col-xl-custom-week {
+			flex: 0 0 auto;
+			width: 14.285714285%
+		}
+	}
+</style>
+
 
 <div class="container">
-	<h1 class="mb-5">You are running an awesome 11ty site</h1>
+	<h1 class="mb-5">Weekly Planning</h1>
 
-	<div class="row pb-5 border-bottom mb-5">
-		<div class="col-lg-6">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet ipsum lacus, non finibus nisi congue quis. Phasellus gravida justo id metus aliquam pretium. Proin rhoncus pretium ligula, at semper felis feugiat et. Nulla vestibulum leo ex, non molestie sem tempor vel. Integer vel accumsan dolor. Suspendisse quam quam, bibendum eu ullamcorper eget, imperdiet at felis. Quisque at ultricies odio. Etiam sollicitudin eros ut risus molestie tristique. Nam ullamcorper ut quam et mollis.</p>
-		</div><!-- end col -->
+	<div id="this-week-list" class="row mb-5">
+		{% for item in [1,2,3] %}
+			{% for item in days %}
+				<div class="col-xl-custom-week col-md-6 col-12 mb-5">
+					<div class="card card-body day-box">
+						<div class="d-flex justify-content-between mb-2">
+							<p class="fw-bold">{{ item.name }}</p>
+							<p class="day-number"></p>
+						</div>
 
-		<div class="col-lg-6">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet ipsum lacus, non finibus nisi congue quis. Phasellus gravida justo id metus aliquam pretium. Proin rhoncus pretium ligula, at semper felis feugiat et. Nulla vestibulum leo ex, non molestie sem tempor vel. Integer vel accumsan dolor. Suspendisse quam quam, bibendum eu ullamcorper eget, imperdiet at felis. Quisque at ultricies odio. Etiam sollicitudin eros ut risus molestie tristique. Nam ullamcorper ut quam et mollis.</p>
-		</div><!-- end col -->
+						<p class="show-days-meal"></p>
+
+						<a href="#add-meal-item" data-bs-toggle="modal">Add Dinner</a>
+					</div>
+				</div>
+			{% endfor %}
+		{% endfor %}
 	</div><!-- end row -->
 
 	{# This is an example of a page component #}
-	{% include 'source/pages/page-components/latest-3-posts.njk' %}
+	{#{% include 'source/pages/page-components/latest-3-posts.njk' %}#}
 </div><!-- end container -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="add-meal-item" tabindex="-1" aria-labelledby="add-meal-item-title" aria-hidden="true">
+	<div class="modal-dialog">
+		<form id="save-meal" class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="add-meal-item-title">Add Dinner for <span></span></h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<input type="text" class="form-control" value="" id="chosen-date">
+				<select class="form-control" id="chosen-meal">
+					{% for meal in mealsCompiled %}
+						<option value="{{ meal.id }}">{{ meal.name }}</option>
+					{% endfor %}
+				</select>
+			</div>
+			<div class="modal-footer justify-content-around">
+				<button type="button" class="btn btn-light" id="close-dinner-modal" data-bs-dismiss="modal">Close</button>
+				<button type="submit" class="btn btn-primary">Add Dinner</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+
+
+<script>
+	{% include "source/_includes/partial-js/library-date.js" %}
+
+	let mealJSON = {% include "source/_data/mealsCompiled.json" %}
+</script>
+
+<script>
+
+</script>

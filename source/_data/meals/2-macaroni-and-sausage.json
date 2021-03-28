@@ -1,0 +1,23 @@
+{
+	"id": "2",
+	"name": "Macaroni and Sausage",
+	"url": "macaroni-and-sausage",
+	"description": "Velveeta mac and cheese with sliced up, pan cooked chicken sausage for additional protein.",
+	"cookTime": "20 minutes",
+	"category": [
+		"pasta", "sausage"
+	],
+	"ingredients": [
+		{"name": "Velveeta Macaroni and Cheese", "amount": 1, "measurement": "box"},
+		{"name": "Chicken Sausage", "amount": 1, "measurement": "12oz package"},
+		{"name": "Feta Cheese", "amount": 1, "measurement": "smattering"}
+	],
+	"instructions": [
+		"Slice the chicken sausage into thin pieces and toss into a skillet with low heat. You can add a little oil if you want but it probably doesn't need it depending on the fat content.",
+		"Start cooking both boxes of pasta according to the instructions.",
+		"Once pasta is done, drain, add cheese sauces.",
+		"Add in extra seasonings like garlic powder and onion powder if you want. Probably some black pepper too. Cumin brings this dish to life.",
+		"Add in the sausage once they are hot.",
+		"Cover the pan and let it get hot all the way through. The heat and pressure will activate the delicious flavors."
+	]
+}

@@ -103,11 +103,53 @@ module.exports = function(eleventyConfig) {
 
 
 
+
+
+
+
+
+	function createCompiledMealsFile() {
+		let mealsArray = [];
+		let directory = "source/_data/meals/";
+
+		fs.readdir(directory, function (error, files) {
+			//handling error
+			if (error) {
+				return console.log('Unable to scan directory: ' + error);
+			}
+
+			//listing all files using forEach
+			files.forEach(function (fileName) {
+				// Push to the mealsArray
+				let meal = fs.readFileSync(directory + fileName, "utf8");
+				let mealJSON = JSON.parse(meal);
+				mealsArray.push(mealJSON);
+			});
+
+			let compiledMealsFile = JSON.stringify(mealsArray);
+
+			fs.writeFileSync("source/_data/mealsCompiled.json", compiledMealsFile, function (err) {
+				if (err) throw err;
+				console.log('Error with compiling the meals file');
+			});
+
+		});
+	}
+
+	createCompiledMealsFile();
+
+
+
+
+
 	eleventyConfig.addPassthroughCopy({"source/images": "images"});
 	eleventyConfig.addPassthroughCopy({"source/manifest.json": "manifest.json"});
 	eleventyConfig.addPassthroughCopy({"source/robots.txt": "robots.txt"});
 	eleventyConfig.addPassthroughCopy({"source/_includes/partial-css/bootstrap.css": "css/bootstrap.css"});
 	eleventyConfig.addPassthroughCopy({"source/_includes/partial-js/bootstrap.js": "js/bootstrap.js"});
+
+	eleventyConfig.addPassthroughCopy({"source/_data/meals-compiled.json": "js/meals.json"});
+
 
 
 

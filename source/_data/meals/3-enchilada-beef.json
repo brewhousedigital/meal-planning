@@ -1,0 +1,22 @@
+{
+	"id": "3",
+	"name": "Enchilada Beef",
+	"url": "enchilada-beef",
+	"description": "Saucy and tangy slow-cooked beef over rice or mac and cheese",
+	"cookTime": "5 hours for crock pot, 10 minutes for rice",
+	"category": [
+		"Beef", "Rice"
+	],
+	"ingredients": [
+		{"name": "Beef Sirloin", "amount": 2.5, "measurement": "lb"},
+		{"name": "Red Enchilada Sauce", "amount": 16, "measurement": "oz"},
+		{"name": "Rice", "amount": 3, "measurement": "scoops"}
+	],
+	"instructions": [
+		"Coat bottom of crock pot with some of Red Enchilada Sauce can.",
+		"Place beef on top of sauce. Cut and remove strings if it has it.",
+		"Pour rest of Red Enchilada sauce over top of beef, covering top and sides entirely.",
+		"Set crock pot to high and cook for 4 hours 30 minutes.",
+		"Put on top of rice and add a delicious amount of feta cheese"
+	]
+}

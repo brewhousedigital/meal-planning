@@ -1,0 +1,24 @@
+{
+	"id": "9999",
+	"name": "",
+	"url": "",
+	"description": "",
+	"cookTime": "",
+	"category": [
+		"", ""
+	],
+	"ingredients": [
+		{"name": "", "amount": 2},
+		{"name": "", "amount": 1},
+		{"name": "", "amount": 1},
+		{"name": "", "amount": 1}
+	],
+	"instructions": [
+		"",
+		"",
+		"",
+		"",
+		"",
+		""
+	]
+}
