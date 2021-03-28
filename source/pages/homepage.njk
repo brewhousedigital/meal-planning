@@ -36,6 +36,8 @@ permalink: /
 		{% endfor %}
 	</div><!-- end row -->
 
+	<p class="text-end"><button type="button" id="clear-all-meals" class="btn btn-link">Clear Schedule</button></p>
+
 	{# This is an example of a page component #}
 	{#{% include 'source/pages/page-components/latest-3-posts.njk' %}#}
 </div><!-- end container -->
@@ -51,7 +53,7 @@ permalink: /
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
-				<input type="text" class="form-control" value="" id="chosen-date">
+				<input type="hidden" class="form-control" value="" id="chosen-date">
 				<select class="form-control" id="chosen-meal">
 					{% for meal in mealsCompiled %}
 						<option value="{{ meal.id }}">{{ meal.name }}</option>

@@ -79,6 +79,7 @@ for (let i = 0; i < totalNumberOfDaysShown; i++) {
 			if(meal.id === String(localStorage.getItem(thisWeekBoxes[i].id))) {
 				if(thisWeekBoxes[i].querySelector(".show-days-meal") !== null) {
 					thisWeekBoxes[i].querySelector(".show-days-meal").append(generateRecipeLink(meal));
+					thisWeekBoxes[i].querySelector("a[href='#add-meal-item']").textContent = "Edit Dinner";
 				}
 			}
 		})
@@ -127,11 +128,25 @@ document.getElementById("save-meal").addEventListener("submit", function(e) {
 	mealJSON.forEach(function(meal) {
 		if(meal.id === String(value)) {
 			document.getElementById(key).querySelector(".show-days-meal").append(generateRecipeLink(meal));
+			document.getElementById(key).querySelector("a[href='#add-meal-item']").textContent = "Edit Dinner";
 		}
 	})
 
 
 
 	document.getElementById("close-dinner-modal").click();
-})
+});
+
+
+	document.getElementById("clear-all-meals").addEventListener("click", function() {
+		let status = confirm("Are you sure you want to clear everything?")
+		if(status) {
+			Object.keys(localStorage).forEach((key) => {
+				if(key.includes("day-")) {
+					localStorage.removeItem(key);
+					window.location.reload();
+				}
+			});
+		}
+	});
 }
