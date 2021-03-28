@@ -1,0 +1,14 @@
+{
+	"id": "00",
+	"name": "Nothing",
+	"url": "nothing",
+	"description": "Ya done goofed and either ate lunch too late or you waited too late to eat cause you were playing video games. Either way, this means a big breakfast for tomorrow so you can think of that while you lie awake at night staring at the ceiling with a grumbling stomach.",
+	"cookTime": "0 minutes",
+	"category": [
+		"nothing"
+	],
+	"ingredients": [],
+	"instructions": [
+		"wait"
+	]
+}
