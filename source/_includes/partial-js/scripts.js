@@ -74,7 +74,7 @@ if(document.getElementById("this-week-list") !== null) {
 		let dayNumber = dayjs().add(i - dayjs().day(), 'day')['$D'];
 		let monthNumber = dayjs().add(i - dayjs().day(), 'day')['$M'];
 		let yearNumber = dayjs().add(i - dayjs().day(), 'day')['$y'];
-		thisWeekBoxesDayNumber[i].innerText = dayNumber;
+		thisWeekBoxesDayNumber[i].innerText = (monthNumber + 1) + "/" + dayNumber;
 
 		// This is the ID to represent the day. something like day-3-21 for April 21st
 		// This is indexed 0 to 11 for the months
