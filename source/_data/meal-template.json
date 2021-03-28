@@ -8,10 +8,10 @@
 		"", ""
 	],
 	"ingredients": [
-		{"name": "", "amount": 2},
-		{"name": "", "amount": 1},
-		{"name": "", "amount": 1},
-		{"name": "", "amount": 1}
+		{"name": "", "amount": 2, "measurement": ""},
+		{"name": "", "amount": 1, "measurement": ""},
+		{"name": "", "amount": 1, "measurement": ""},
+		{"name": "", "amount": 1, "measurement": ""}
 	],
 	"instructions": [
 		"",

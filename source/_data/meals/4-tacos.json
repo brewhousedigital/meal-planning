@@ -1,0 +1,25 @@
+{
+	"id": "4",
+	"name": "Tacos",
+	"url": "tacos",
+	"description": "Ground beef, rice, and beans mixed together in perfect harmony.",
+	"cookTime": "20 minutes",
+	"category": [
+		"mexican"
+	],
+	"ingredients": [
+		{"name": "Ground Beef", "amount": 1, "measurement": "lb"},
+		{"name": "Rice", "amount": 3, "measurement": "scoops"},
+		{"name": "Pinto Beans", "amount": 1, "measurement": "can"},
+		{"name": "Taco Seasoning", "amount": 1, "measurement": "packet"}
+	],
+	"instructions": [
+		"Start the rice cooking",
+		"Cook the ground beef until its brown.",
+		"Add in the taco seasoning and water.",
+		"Simmer for two or three minutes.",
+		"Add in the pinto beans and mix into ground beef.",
+		"Add in the rice and mix until everything is coated.",
+		"Add some extra onion and garlic powder."
+	]
+}

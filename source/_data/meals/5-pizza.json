@@ -1,0 +1,16 @@
+{
+	"id": "5",
+	"name": "Store Pizza",
+	"url": "store-pizza",
+	"description": "Store bought pizza. Yum.",
+	"cookTime": "30 minutes",
+	"category": [
+		"american"
+	],
+	"ingredients": [
+		{"name": "Store Bought Pizza", "amount": 1, "measurement": "box"}
+	],
+	"instructions": [
+		"Cook it."
+	]
+}

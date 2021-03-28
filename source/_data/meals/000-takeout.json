@@ -1,0 +1,18 @@
+{
+	"id": "000",
+	"name": "Takeout",
+	"url": "takeout",
+	"description": "Ordering food is so fun.",
+	"cookTime": "30 minutes",
+	"category": [
+		"All"
+	],
+	"ingredients": [
+		{"name": "Phone", "amount": 1, "measurement": "device"}
+	],
+	"instructions": [
+		"Call restaurant and order.",
+		"Pick up food.",
+		"Come home and eat."
+	]
+}
