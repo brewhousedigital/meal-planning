@@ -13,9 +13,9 @@
 
     // Define the footer links
     let footerLinks = [
-        {name: 'Meals', icon: 'archive', url: '#'},
-        {name: 'Shopping', icon: 'cart', url: '#'},
-        {name: 'Selected', icon: 'list-ol', url: '#'},
+        {name: 'Meals', icon: 'archive', url: '/meals'},
+        {name: 'Shopping', icon: 'cart', url: '/shopping'},
+        {name: 'Selected', icon: 'list-ol', url: '/selected'},
     ]
 
     // Render the loading icon or not
@@ -92,7 +92,7 @@
         <slot></slot>
     </main>
 
-
+    {#if isUserLoggedIn}
     <footer class="border-top">
         <div class="container">
             <div class="d-flex justify-content-between align-items-end text-center">
@@ -105,6 +105,7 @@
             </div><!-- end flex -->
         </div><!-- end container -->
     </footer>
+    {/if}
 {:else}
     <main style="width: 100%; height: 100vh;display:flex; align-items: center; justify-content: center;">
         {#if errorMessage === ""}
@@ -127,6 +128,7 @@
 
     footer {
         position: fixed;
+        z-index: 100;
         width: 100%;
         left: 0;
         bottom: 0;

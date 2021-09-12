@@ -1,17 +1,16 @@
 <script>
     import meals from "$lib/data/meals.json";
 
+    console.log("MEALS", meals)
+
     // Process the JSON values
     let mealItems = meals.map(item => {
-        item.ingredients = JSON.parse(item.ingredients);
-        item.instructions = JSON.parse(item.instructions);
-        item.tags = JSON.parse(item.tags);
+        if(typeof item.ingredients !== 'object') item.ingredients = JSON.parse(item.ingredients);
+        if(typeof item.instructions !== 'object') item.instructions = JSON.parse(item.instructions);
+        if(typeof item.tags !== 'object') item.tags = JSON.parse(item.tags);
 
         return item;
     });
-
-
-
 </script>
 
 
