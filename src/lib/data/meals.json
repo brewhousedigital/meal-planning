@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Pink Pasta",
+    "image": "pink-pasta.jpg",
+    "ingredients": "[\"Two boxes of penne pasta\",\"One jar of alfredo sauce\",\"One jar of marinara\",\"One bag of frozen, pre-cooked meatballs\"]",
+    "instructions": "[\"Start the frozen meatballs on a skillet with a tiny bit of avocado oil on low heat.\",\"Start cooking both boxes of pasta according to the instructions.\",\"Once pasta is done, drain, add a whole jar of alfredo, and a whole jar of marinara.\",\"Add in extra seasonings, garlic powder, onion powder, and black pepper and stir.\",\"Add in the meatballs once they are cooked.\",\"Stir to mix all ingredients together.\"]",
+    "tags": "[\"italian\", \"pasta\", \"beef\"]",
+    "cookTime": "30",
+    "servingSize": null,
+    "url": "pink-pasta",
+    "description": "Alfredo and marinara mixed together with beef meatballs and penne pasta",
+    "leftovers": 1,
+    "rowid": 1
+  },
+  {
+    "name": "Macaroni and Cheese with Chicken Sausage",
+    "image": null,
+    "ingredients": "[\"Two boxes of Velveeta Macaroni and Cheese\",\"Chicken Sausage\",\"Feta Cheese\"]",
+    "instructions": "[\"Slice the chicken sausage into thin pieces and toss into a skillet with low heat. You can add a little oil if you want but it probably doesn't need it depending on the fat content.\",\"Start cooking both boxes of pasta according to the instructions.\",\"Once pasta is done, drain, add cheese sauces.\",\"Add in extra seasonings like garlic powder, onion powder, black pepper, and cumin.\",\"Add in the sausage once they are hot and stir.\"]",
+    "tags": "[\"american\", \"pasta\", \"chicken\"]",
+    "cookTime": "30",
+    "servingSize": null,
+    "url": "macaroni-and-cheese-with-chicken-sausage",
+    "description": "Velveeta mac and cheese with sliced up, pan cooked chicken sausage.",
+    "leftovers": 1,
+    "rowid": 2
+  },
+  {
+    "name": "Enchilada Beef",
+    "image": "beef-enchilada.jpg",
+    "ingredients": "[\"2.5 pounds of Beef Sirloin\",\"16oz jar of Whole Foods Red Enchilada Sauce\",\"3 scoops of Rice in the rice cooker\"]",
+    "instructions": "[\"Coat bottom of crock pot with some of Red Enchilada Sauce can.\",\"Place beef on top of sauce. Cut and remove strings if it has it.\",\"Pour rest of Red Enchilada sauce over top of beef, covering top and sides entirely.\",\"Set crock pot to low and cook for 8 hours.\",\"Put on top of rice and add a delicious amount of feta cheese\"]",
+    "tags": "[\"american\", \"beef\", \"rice\"]",
+    "cookTime": "20",
+    "servingSize": null,
+    "url": "enchilada-beef",
+    "description": "Saucy and tangy slow-cooked beef over rice or mac and cheese",
+    "leftovers": 1,
+    "rowid": 3
+  },
+  {
+    "name": "Tacos",
+    "image": "tacos.jpg",
+    "ingredients": "[\"One pound of Ground Beef\",\"Three scoops of Rice in the Rice Cooker\",\"One can of drained Pinto Beans\",\"One packet of Mild Taco Seasoning\"]",
+    "instructions": "[\"Start the rice cooking\",\"Cook the ground beef until its brown.\",\"Add in the taco seasoning and water.\",\"Simmer for two or three minutes.\",\"Add in the pinto beans and mix into ground beef.\",\"Add in the rice and mix until everything is coated.\",\"Add some extra onion powder, garlic powder, and cumin.\"]",
+    "tags": "[\"mexican\", \"beef\"]",
+    "cookTime": "30",
+    "servingSize": null,
+    "url": "tacos",
+    "description": "Ground beef",
+    "leftovers": 1,
+    "rowid": 4
+  },
+  {
+    "name": "Butter Chicken",
+    "image": null,
+    "ingredients": "[\"Six scoops of Rice in the Rice Cooker\",\"Two Chicken Breast\",\"One jar of Target Butter Chicken simmer sauce\"]",
+    "instructions": "[\"Start the rice.\",\"Slice up the chicken and add to skillet with some oil, salt, and pepper.\",\"Start cooking on a skillet. Couple minutes each side.\",\"Pour in the simmer sauce.\",\"Turn up the heat and add a lid. Let the sauce simmer for a minute or two to make sure the chicken is totally cooked.\",\"Add in the rice once it is done and stir to complete.\",\"Top with feta cheese.\"]",
+    "tags": "[\"indian\", \"rice\"]",
+    "cookTime": "30",
+    "servingSize": null,
+    "url": "butter-chicken",
+    "description": "Delicious indian dish",
+    "leftovers": 1,
+    "rowid": 5
+  },
+  {
+    "name": "Vindaloo Chicken",
+    "image": null,
+    "ingredients": "[\"Six scoops of Rice in the Rice Cooker\",\"Two Chicken Breast\",\"One jar of Target Vindaloo simmer sauce\"]",
+    "instructions": "[\"Start the rice.\",\"Slice up the chicken and add to skillet with some oil, salt, and pepper.\",\"Start cooking on a skillet. Couple minutes each side.\",\"Pour in the simmer sauce.\",\"Turn up the heat and add a lid. Let the sauce simmer for a minute or two to make sure the chicken is totally cooked.\",\"Add in the rice once it is done and stir to complete.\",\"Top with feta cheese.\"]",
+    "tags": "[\"indian\", \"rice\"]",
+    "cookTime": "30",
+    "servingSize": null,
+    "url": "vindaloo-chicken",
+    "description": "Delicious indian dish",
+    "leftovers": 1,
+    "rowid": 6
+  }
+]

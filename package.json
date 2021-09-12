@@ -1,40 +1,26 @@
 {
-  "name": "eleventy-site-template",
-  "version": "1.0.0",
-  "description": "A starter repository for a web site using the Eleventy static site generator.",
+  "name": "meal_plan",
+  "version": "0.0.1",
   "scripts": {
-    "build": "eleventy",
-    "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
-    "start": "eleventy --serve",
-    "debug": "DEBUG=* eleventy"
+    "start": "svelte-kit dev --port 5003",
+    "dev": "svelte-kit dev --port 5003",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/brewhousedigital/eleventy-site-template.git"
-  },
-  "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/11ty/eleventy-base-blog/issues"
-  },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-navigation": "^0.1.6",
-    "@11ty/eleventy-plugin-rss": "^1.1.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
-    "luxon": "^1.26.0",
-    "markdown-it-anchor": "^5.3.0",
-    "slugify": "^1.5.0"
+    "@sveltejs/adapter-netlify": "^1.0.0-next.29",
+    "@sveltejs/kit": "next",
+    "svelte": "^3.34.0"
   },
+  "type": "module",
   "dependencies": {
-    "bootstrap-icons": "^1.4.0",
-    "clean-css": "^4.2.3",
-    "markdown-it": "^11.0.1"
+    "@lukeed/uuid": "^2.0.0",
+    "backendless": "^6.2.24",
+    "bufferutil": "^4.0.3",
+    "cookie": "^0.4.1",
+    "dotenv": "^10.0.0",
+    "slugify": "^1.6.0",
+    "supports-color": "^9.0.2",
+    "utf-8-validate": "^5.0.5"
   }
 }

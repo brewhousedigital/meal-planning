@@ -1,5 +1,5 @@
-_site/
-node_modules/
-package-lock.json
-.idea
-_site
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
